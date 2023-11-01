@@ -10,7 +10,7 @@ const flavors = UserInput.split(',');             // store the result in an arra
 
 const orderHistory = {};                          //create a object to keep count of how many orders there are of each flavor
  
-for(i = 0; i <flavors.length; i++){               // create a loop to go through the array and add to object 
+for(let i = 0; i <flavors.length; i++){               // create a loop to go through the array and add to object 
   const flavor = flavors[i];
   if(orderHistory[flavor]) {
     orderHistory[flavor] += 1;
